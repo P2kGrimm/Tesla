@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Cars</title>
+    <link rel="icon" href="imagens/tesla-logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Pixo Reto';
+            src: url('PixoReto-Regular.ttf') format('truetype');
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            
+            <div class="tesla-logo">
+                <span class="t">T</span>
+                <span class="e"><div></div><div></div><div></div></span>
+                <span class="s">S</span>
+                <span class="l">L</span>
+                <span class="a">A</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#vehicles">Vehicles</a></li>
+                    <li><a href="#energy">Energy</a></li>
+                    <li><a href="#charging">Charging</a></li>
+                    <li><a href="#discover">Discover</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <img src="imagens/HelpIcon.png" alt="Help">
+                <img src="imagens/GlobeIcon.png" alt="Language">
+                <img src="imagens/UserIcon.png" alt="User">
+            </div>
+            <button class="menu-toggle" aria-label="Open menu">
+                &#9776;
+            </button>
+        </div>
+    </header>
+    <main>
+        <section id="modelY" class="car-section">
+            <h1>Model Y</h1>
+            <div class="price-details">
+                <p class="price">0.99% APR Financing</p>
+                <p class="price">From $299/mo<sup>¹</sup> Lease After Est. Gas Savings</p>
+            </div>
+            <img src="imagens/Model Y.avif" alt="Tesla Model Y">
+            <div class="buttons">
+                <button class="order-now">Order Now</button>
+                <button class="demo-drive">Demo Drive</button>
+            </div>
+        </section>
+        <section id="model3" class="car-section">
+            <h1>Model 3</h1>
+            <div class="price-details">
+                <p class="price">From $33,990<sup>²</sup></p>
+                <p class="price">After Est. Savings</p>
+            </div>
+            <img src="imagens/Model 3.avif" alt="Tesla Model 3">
+            <div class="buttons">
+                <button class="order-now">Order Now</button>
+                <button class="demo-drive">Demo Drive</button>
+            </div>
+        </section>
+        <section id="modelX" class="car-section">
+            <h1>Model X</h1>
+            <div class="price-details">
+                <p class="price">From $63,990<sup>³</sup></p>
+                <p class="price">After Est. Savings</p>
+            </div>
+            <img src="imagens/Model X.avif" alt="Tesla Model X">
+            <div class="buttons">
+                <button class="order-now">Order Now</button>
+                <button class="demo-drive">Demo Drive</button>
+            </div>
+        </section>
+        <section id="modelS" class="car-section">
+            <h1 style="color: white;">Model S</h1>
+            <div class="price-details">
+                <p class="price" style="color: white;">From $66,490<sup>⁴</sup></p>
+                <p class="price" style="color: white;">After Est. Savings</p>
+            </div>
+            <img src="imagens/Model S.avif" alt="Tesla Model S">
+            <div class="buttons">
+                <button class="order-now">Order Now</button>
+                <button class="demo-drive">Demo Drive</button>
+            </div>
+        </section>
+        <section id="cybertruck" class="car-section">
+            <h1 class="cybertruck-title">CYBERTRUCK</h1>
+            <img src="imagens/Cybertruck.avif" alt="Tesla Cybertruck">
+            <div class="buttons">
+                <button class="order-now">Order Now</button>
+                <button class="demo-drive">Demo Drive</button>
+            </div>
+        </section>
+        <section id="solarPanels" class="car-section">
+            <h1 style="color: white;">Solar Panels</h1>
+            <div class="price-details">
+                <p class="price" style="color: white;">Lowest Cost Solar Panels in America</p>
+            </div>
+            <img src="imagens/SolarPanels.avif" alt="Tesla Solar Panels">
+            <div class="buttons">
+                <button class="order-now">Order Now</button>
+                <button class="demo-drive">Learn More</button>
+            </div>
+        </section>
+        <section id="solarRoof" class="car-section">
+            <h1 style="color: #444;">Solar Roof</h1>
+            <div class="price-details">
+                <p class="price" style="color: #444;">Transform Your Roof and Produce Clean Energy</p>
+            </div>
+            <img src="imagens/SolarRoof.avif" alt="Tesla Solar Roof">
+            <div class="buttons">
+                <button class="order-now">Order Now</button>
+                <button class="demo-drive">Learn More</button>
+            </div>
+        </section>
+        <section id="powerwall" class="car-section">
+            <h1 style="color: #444;">Powerwall</h1>
+            <div class="price-details">
+                <p class="price" style="color: #444;">Store Energy for Backup Power</p>
+            </div>
+            <img src="imagens/Powerwall.avif" alt="Tesla Powerwall">
+            <div class="buttons">
+                <button class="order-now">Order Now</button>
+                <button class="demo-drive">Learn More</button>
+            </div>
+        </section>
+        <section id="accessories" class="car-section">
+            <h1 style="color: #444;">Accessories</h1>
+            <img src="imagens/Accessories.avif" alt="Tesla Accessories">
+            <div class="buttons">
+                <button class="order-now">Shop Now</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <p>¹ Excludes taxes and fees with price subject to change. Available in select states and requires credit approval. Est. gas savings is $100/month. See Details</p>
+            <p>² Price before estimated savings is $38,990, excluding taxes and fees. Subject to change. Learn about est. gas savings.</p>
+            <p>³ Price before estimated savings is $77,990, excluding taxes and fees. Subject to change. Learn about est. gas savings.</p>
+            <p>⁴ Price before estimated savings is $72,990, excluding taxes and fees. Subject to change. Learn about est. gas savings.</p>
+        </div>
+        <div class="footer-menu">
+            <span>Tesla © 2024</span>
+            <span><a href="#">Privacy & Legal</a></span>
+            <span><a href="#">Vehicle Recalls</a></span>
+            <span><a href="#">Contact</a></span>
+            <span><a href="#">News</a></span>
+            <span><a href="#">Get Updates</a></span>
+            <span><a href="#">Locations</a></span>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('show-menu');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+nav ul.show-menu {
+    max-height: 300px;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    color: #333; /* Preto/cinza para todas as visualizações */
+}
+
+nav ul li a:hover {
+    color: #e82127;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    margin-left: 1rem;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background-color: #000;
+}
+
+.car-section {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: -5px;
+}
+
+.car-section h1 {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: #444;
+}
+
+.car-section#modelS h1,
+.car-section#solarPanels h1 {
+    color: #fff;
+}
+
+.car-section .price-details {
+    position: absolute;
+    top: 12%;
+    width: 100%;
+    text-align: center;
+}
+
+.car-section .price {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 0.2rem 0;
+}
+
+.car-section#modelS .price,
+.car-section#solarPanels .price {
+    color: #fff;
+}
+
+.car-section .buttons {
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.car-section img {
+    width: 100%;
+    height: 110vh;
+    object-fit: cover;
+    border: none;
+}
+
+.car-section .buttons button {
+    padding: 0.75rem 3rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.car-section .order-now {
+    background-color: #fff;
+    color: #333;
+}
+
+.car-section .order-now:hover {
+    background-color: #e6e6e6;
+}
+
+.car-section .demo-drive {
+    background-color: #333;
+    color: #fff;
+}
+
+.car-section .demo-drive:hover {
+    background-color: #555;
+}
+
+.cybertruck-title {
+    font-family: 'Pixo Reto', Arial, sans-serif;
+    font-size: 6rem;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+footer {
+    background-color: transparent;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-info {
+    margin-top: 2rem;
+}
+
+.footer-info p {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin: 0.3rem 0;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.footer-menu span {
+    color: #fff;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .icons {
+        margin-top: 1rem;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .car-section img {
+        height: 100vh;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    nav ul {
+        max-height: none;
+        overflow: visible;
+    }
+
+    nav ul li a {
+        color: #333;
+    }
+}
+
+.tesla-logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Pixo Reto', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.tesla-logo span {
+    margin-right: 0.2rem;
+}
+
+.tesla-logo .e div {
+    width: 8px;
+    height: 2px;
+    background-color: #333;
+    margin: 1px 0;
+}
+
+.tesla-logo .e {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tesla-logo .a {
+    position: relative;
+}
